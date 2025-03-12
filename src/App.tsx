@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-import { MainTitle } from './components/mainTitle'
-import { Cards } from './components/cards'
+import "./App.css"
+import { MainTitle } from "./components/MainTitle/MainTitle"
+import { LeftCard } from "./components/LeftCard/LeftCard"
+import { TranslateTo } from "./components/TransalteTo/TranslateTo"
+import { TranslationProvider } from "./context/TranslationContext/TranslationProvider"
 
 function App() {
-
   return (
     <>
-      <MainTitle></MainTitle>
-      <Cards></Cards>
+      <TranslationProvider>
+        <MainTitle />
+        <div className="cards-container">
+          <LeftCard />
+          <TranslateTo />
+        </div>
+      </TranslationProvider>
     </>
   )
 }

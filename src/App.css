@@ -2,12 +2,13 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-direction: column; /* Acomoda los elementos en columna */
-  align-items: center; /* Centra horizontalmente */
-  justify-content: center; /* Centra verticalmente todo el contenido */
+  flex-direction: column;
+  /* Centra verticalmente todo el contenido */
   background-image: url("assets/background.jpg");
-  background-size: cover; /* Para que cubra toda la pantalla */
-  background-position: center; /* Para centrar la imagen */
+  background-size: cover;
+  /* Para que cubra toda la pantalla */
+  background-position: center;
+  /* Para centrar la imagen */
 }
 
 main {
@@ -22,6 +23,7 @@ main {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -33,20 +35,28 @@ main {
   }
 }
 
-.card {
-  padding: 2em;
-}
-
 .read-the-docs {
   color: #888;
 }
-.main-title{
+
+.main-title {
   color: var(--primary-300);
   display: flex;
   width: 100%;
   justify-content: center;
   border-bottom: 1px solid lightgray;
 }
-#appName{
+
+#appName {
   text-shadow: 5px 5px 12px rgba(0, 0, 0, 1);
+}
+
+.cards-container {
+  display: grid;
+  grid-template-areas:
+    "input output";
+  grid-template-columns: 50% 1fr;
+  grid-template-rows: 1fr;
+  padding: 2em;
+  gap: 1em;
 }
