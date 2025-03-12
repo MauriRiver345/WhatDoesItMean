@@ -1,0 +1,93 @@
+.card {
+  background-color: color-mix(in srgb, var(--background-950) 40%, transparent 100%);
+  border-radius: 8px;
+  height: fit-content;
+  width: 100%;
+
+  border: 2px solid color-mix(in srgb, var(--accent-50) 60%, transparent 100%);
+}
+
+.language-selector {
+  display: flex;
+  gap: 1em;
+  padding: .4em 2em;
+
+  border-bottom: 2px solid color-mix(in srgb, var(--accent-700) 50%, transparent 100%);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em 1em;
+}
+
+.to-translate-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.to-translate {
+  font-size: large !important;
+  font-weight: 500 !important;
+  background-color: none;
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  min-height: 200px;
+  width: 85%;
+
+  font-size: 1.5em;
+}
+
+.total-characters-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.total-characters {
+  color: color-mix(in srgb, var(--text-50) 50%, transparent 100%);
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+}
+
+.controls>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+}
+
+.controls>div>* {
+  border: 2px solid color-mix(in srgb, var(--accent-100) 10%, transparent 100%);
+  color: color-mix(in srgb, var(--text-100) 90%, transparent 100%);
+  padding: .5em .7em;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: var(--primary-900);
+  }
+}
+
+.translate-button {
+  background-color: var(--primary-800);
+  border: none;
+
+  border-radius: 8px;
+  font-size: large;
+  padding: .5em 1em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-900);
+  }
+}
