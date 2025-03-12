@@ -1,6 +1,13 @@
 #root {
-  min-height: 100vh;
   width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Acomoda los elementos en columna */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente todo el contenido */
+  background-image: url("assets/background.jpg");
+  background-size: cover; /* Para que cubra toda la pantalla */
+  background-position: center; /* Para centrar la imagen */
 }
 
 main {
@@ -11,7 +18,35 @@ main {
   justify-content: center;
 }
 
-.container {
-  width: 90%;
-  height: 90%;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.main-title{
+  color: var(--primary-300);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+}
+#appName{
+  text-shadow: 5px 5px 12px rgba(0, 0, 0, 1);
 }
