@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat Variable', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,6 +11,68 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --text-50: #f2f4f1;
+--text-100: #e5e8e3;
+--text-200: #cad1c7;
+--text-300: #b0baab;
+--text-400: #96a38f;
+--text-500: #7b8c73;
+--text-600: #63705c;
+--text-700: #4a5445;
+--text-800: #31382e;
+--text-900: #191c17;
+--text-950: #0c0e0b;
+
+--background-50: #f2f4f1;
+--background-100: #e6e8e3;
+--background-200: #ccd1c7;
+--background-300: #b3baab;
+--background-400: #99a38f;
+--background-500: #808c73;
+--background-600: #66705c;
+--background-700: #4d5445;
+--background-800: #33382e;
+--background-900: #1a1c17;
+--background-950: #0d0e0b;
+
+--primary-50: #f1f4f0;
+--primary-100: #e4eae1;
+--primary-200: #c8d4c4;
+--primary-300: #adbfa6;
+--primary-400: #91a989;
+--primary-500: #76946b;
+--primary-600: #5e7656;
+--primary-700: #475940;
+--primary-800: #2f3b2b;
+--primary-900: #181e15;
+--primary-950: #0c0f0b;
+
+--secondary-50: #f1f5f0;
+--secondary-100: #e3eae1;
+--secondary-200: #c7d6c2;
+--secondary-300: #acc1a4;
+--secondary-400: #90ac86;
+--secondary-500: #749867;
+--secondary-600: #5d7953;
+--secondary-700: #465b3e;
+--secondary-800: #2e3d29;
+--secondary-900: #171e15;
+--secondary-950: #0c0f0a;
+
+--accent-50: #f1f5ef;
+--accent-100: #e3ebe0;
+--accent-200: #c7d7c1;
+--accent-300: #abc3a2;
+--accent-400: #8faf83;
+--accent-500: #729c63;
+--accent-600: #5c7c50;
+--accent-700: #455d3c;
+--accent-800: #2e3e28;
+--accent-900: #171f14;
+--accent-950: #0b100a;
+
+
 }
 
 a {
@@ -66,3 +128,5 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
