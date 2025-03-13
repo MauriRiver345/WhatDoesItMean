@@ -1,8 +1,7 @@
 .card {
-  background-color: color-mix(in srgb, var(--background-950) 40%, transparent 100%);
+  background-color: color-mix(in srgb, var(--background-950) 90%, transparent 10%);
   border-radius: 8px;
-  height: fit-content;
-  width: 100%;
+  grid-area: input;
 
   border: 2px solid color-mix(in srgb, var(--accent-50) 60%, transparent 100%);
 }
@@ -37,7 +36,7 @@
   border: none;
   outline: none;
   resize: none;
-  min-height: 200px;
+  height: 100%;
   width: 85%;
 
   font-size: 1.5em;
