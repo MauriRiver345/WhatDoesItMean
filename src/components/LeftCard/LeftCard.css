@@ -29,6 +29,7 @@
 }
 
 .to-translate {
+  padding-top: 10px;
   font-size: large !important;
   font-weight: 500 !important;
   background-color: none;
@@ -36,8 +37,8 @@
   border: none;
   outline: none;
   resize: none;
-  height: 100%;
-  width: 85%;
+  height: 130px;
+  width: 90%;
 
   font-size: 1.5em;
 }

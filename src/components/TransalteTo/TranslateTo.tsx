@@ -22,7 +22,7 @@ export function TranslateTo() {
   console.log(langPair)
 
   return (
-    <div className="translate">
+    <div className="translateTo">
       <div className="header">
         <p
           onClick={changeToLang}
@@ -41,13 +41,15 @@ export function TranslateTo() {
         </a>
       </div>
       <div className="text">
-        <p>{text}</p>
+        <p className="result">{text}</p>
       </div>
       <div className="footer">
-        <a href="">
+        <div className="iconos"> 
+        </div>
+        <a href="" className="mini-icons">
           <PiSpeakerHighFill />
         </a>
-        <a href="">
+        <a href="" className="mini-icons">
           <FaCopy />
         </a>
       </div>
