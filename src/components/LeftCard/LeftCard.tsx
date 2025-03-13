@@ -3,6 +3,9 @@ import { FaCopy } from "react-icons/fa"
 import { PiSpeakerHighFill } from "react-icons/pi"
 import { useTranslationContext } from "../../context/TranslationContext/useTranslationContext"
 import useTranslate from "../../hooks/useTranslate"
+import "../TransalteTo/TranslateTo.css"
+import { FaExchangeAlt } from "react-icons/fa"
+
 
 export function LeftCard() {
   const { setText, text, setLangPair, langPair } = useTranslationContext()
@@ -32,48 +35,55 @@ export function LeftCard() {
   console.log(langPair)
 
   return (
-    <section className="card">
-      <div className="language-selector">
-        <p>Select Language</p>
+    <div className="translateFrom">
+      <div className="header">
+        <p>
+          Select Languaje
+        </p>
         <p
           onClick={changeFromLang}
           data-lang="es"
         >
-          Español
+          Spanish
         </p>
         <p
-          onClick={changeFromLang}
+            onClick={changeFromLang}
           data-lang="en"
         >
           English
         </p>
+        <a href="">
+          <FaExchangeAlt id="iconExchange" />
+        </a>
       </div>
-      <div className="content">
-        <div className="to-translate-container">
-          <textarea
-            onChange={handleInput}
-            value={text}
-            className="to-translate"
-            placeholder="Type here..."
-          />
-        </div>
-        <div className="total-characters-container">
-          <p className="total-characters">{text.length}/500</p>
-        </div>
-        <div className="controls">
-          <div>
-            <PiSpeakerHighFill size={25} />
-            <FaCopy size={25} />
-          </div>
-
-          <button
-            className="translate-button"
-            onClick={() => }
-          >
-            Translate
-          </button>
-        </div>
+      <div className="text">
+      <div className="to-translate-container">
+    <textarea
+      onChange={handleInput}
+      value={text}
+      className="to-translate"
+      placeholder="Type here..."
+    />
+  </div>
+          <div className="total-characters-container">
+    <p className="total-characters">{text.length}/500</p>
+  </div>
       </div>
-    </section>
+      <div className="footerFrom">
+    <div className="iconos">
+    <a href="" className="mini-icons">
+          <PiSpeakerHighFill />
+        </a>
+    <a href="" className="mini-icons">
+          <FaCopy />
+        </a>
+    </div>
+        <button
+      className="translate-button"
+      onClick={() => console.log("Translate")}>
+      Translate
+    </button>
+      </div>
+    </div>
   )
 }

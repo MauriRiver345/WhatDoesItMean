@@ -1,6 +1,6 @@
-.translate {
-  width: 100%;
-  height: 100%;
+.translateTo {
+  width: 40%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -9,7 +9,6 @@
   opacity: 0.8;
   border-radius: 15px;
 
-  grid-area: output;
 }
 
 #iconExchange {
@@ -32,15 +31,66 @@
   display: flex;
   align-items: end;
   gap: 1em;
-  padding-left: 1.5em;
+  padding-left: 1em;
   padding-right: 1em;
+  padding-bottom: .5em;
+
 }
 
 .text {
   width: 85%;
+  height: 180px;
   display: flex;
   flex-direction: column;
   gap: 1em;
   padding-left: 1em;
   padding-right: 1em;
+}
+.translateFrom{
+  flex-wrap: wrap;
+  width: 40%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #151615;
+  border: solid lightgray 0.5px;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+.footerFrom{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1em;
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+}
+.iconos{
+  display: flex;
+  gap: 1em;
+}
+.mini-icons{
+  opacity: 0.5;
+}
+
+.result{
+  margin-top: 0px !important;
+  padding-left: 15px;
+  font-family: monospace;
+  word-wrap: break-word; /* Rompe palabras largas */
+  overflow-wrap: break-word; /* Asegura que se rompan palabras si es necesario */
+  white-space: normal; /* Permite que el texto se ajuste dentro del contenedor */
+  max-width: 100%; /* Asegura que no supere el ancho del contenedor */
+  overflow-x: hidden; /* Evita el desbordamiento */
+  overflow-y: scroll;
+  font-size: 1.5em;
+  font-size: large !important;
+  font-weight: 500 !important;
+  background-color: none;
+  background: none;
+  border: none;
+  outline: none;
+  line-height: normal;
 }
