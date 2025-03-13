@@ -94,3 +94,8 @@
   outline: none;
   line-height: normal;
 }
+
+.Language:hover{
+  color: blue;
+  cursor: pointer;
+}

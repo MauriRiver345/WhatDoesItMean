@@ -38,15 +38,15 @@ export function LeftCard() {
     <div className="translateFrom">
       <div className="header">
         <p>
-          Select Languaje
+          Select Language
         </p>
-        <p
+        <p className="Language"
           onClick={changeFromLang}
           data-lang="es"
         >
           Spanish
         </p>
-        <p
+        <p className="Language"
             onClick={changeFromLang}
           data-lang="en"
         >

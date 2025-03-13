@@ -24,13 +24,13 @@ export function TranslateTo() {
   return (
     <div className="translateTo">
       <div className="header">
-        <p
+        <p className="Language"
           onClick={changeToLang}
           data-lang="en"
         >
           English
         </p>
-        <p
+        <p className="Language"
           onClick={changeToLang}
           data-lang="es"
         >
