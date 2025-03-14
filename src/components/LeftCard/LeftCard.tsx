@@ -8,8 +8,8 @@ import { FaExchangeAlt } from "react-icons/fa"
 
 
 export function LeftCard() {
-  const { setText, text, setLangPair, langPair } = useTranslationContext()
-  useTranslate(text, langPair)
+  const { setText, text, setLangPair, langPair, setResult, result } = useTranslationContext()
+  const translate = useTranslate()
 
   function handleInput(e: React.ChangeEvent<HTMLTextAreaElement>) {
     e.preventDefault()
@@ -32,6 +32,11 @@ export function LeftCard() {
     })
   }
 
+  async function handleTranslate() {
+    const translation = await translate(text,langPair)
+    setResult(translation)
+  }
+  console.log(result)
   console.log(langPair)
 
   return (
@@ -80,7 +85,7 @@ export function LeftCard() {
     </div>
         <button
       className="translate-button"
-      onClick={() => console.log("Translate")}>
+      onClick={handleTranslate}>
       Translate
     </button>
       </div>

@@ -11,7 +11,7 @@ export default function useTranslate() {
       const jsonData = await response.json()
       const translated = jsonData.responseData.translatedText
       setTranslation(translated)
-      return translated
+      return translation
     } catch (error) {
       console.error("Error fetching translation:", error)
       return ""
