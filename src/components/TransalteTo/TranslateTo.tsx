@@ -5,7 +5,7 @@ import { FaCopy } from "react-icons/fa"
 import { useTranslationContext } from "../../context/TranslationContext/useTranslationContext"
 
 export function TranslateTo() {
-  const { text, langPair, setLangPair, result } = useTranslationContext()
+  const { langPair, setLangPair, result } = useTranslationContext()
 
   function changeToLang(e: React.MouseEvent<HTMLParagraphElement>) {
     e.preventDefault()

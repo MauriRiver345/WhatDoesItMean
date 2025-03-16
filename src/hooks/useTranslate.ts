@@ -1,7 +1,5 @@
-import { useState } from "react"
 
 export default function useTranslate() {
-  const [translation, setTranslation] = useState<string>("")
 
   async function translate(text: string, lang: string): Promise<string> {
     try {
@@ -9,9 +7,7 @@ export default function useTranslate() {
       const params = new URLSearchParams({ q: text, langpair: lang })
       const response = await fetch(`${url}?${params}`)
       const jsonData = await response.json()
-      const translated = jsonData.responseData.translatedText
-      setTranslation(translated)
-      return translation
+      return jsonData.responseData.translatedText
     } catch (error) {
       console.error("Error fetching translation:", error)
       return ""
