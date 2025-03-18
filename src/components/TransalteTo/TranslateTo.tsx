@@ -3,9 +3,10 @@ import { FaExchangeAlt } from "react-icons/fa"
 import { PiSpeakerHighFill } from "react-icons/pi"
 import { FaCopy } from "react-icons/fa"
 import { useTranslationContext } from "../../context/TranslationContext/useTranslationContext"
+import useTranslate from "../../hooks/useTranslate"
 
 export function TranslateTo() {
-  const { text, langPair, setLangPair } = useTranslationContext()
+  const { text, langPair, setLangPair, result } = useTranslationContext()
 
   function changeToLang(e: React.MouseEvent<HTMLParagraphElement>) {
     e.preventDefault()
@@ -41,7 +42,7 @@ export function TranslateTo() {
         </a>
       </div>
       <div className="text">
-        <p className="result">{text}</p>
+        <p className="result">{result}</p>
       </div>
       <div className="footer">
         <div className="iconos"> 

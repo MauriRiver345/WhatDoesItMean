@@ -5,11 +5,12 @@ import { useTranslationContext } from "../../context/TranslationContext/useTrans
 import useTranslate from "../../hooks/useTranslate"
 import "../TransalteTo/TranslateTo.css"
 import { FaExchangeAlt } from "react-icons/fa"
+import translate from "../../hooks/useTranslate"
 
 
 export function LeftCard() {
-  const { setText, text, setLangPair, langPair } = useTranslationContext()
-  useTranslate(text, langPair)
+  const { setText, text, setLangPair, langPair, setResult } = useTranslationContext()
+  const translate = useTranslate()
 
   function handleInput(e: React.ChangeEvent<HTMLTextAreaElement>) {
     e.preventDefault()
@@ -30,6 +31,12 @@ export function LeftCard() {
 
       return `${newFromLang}|${toLang}`
     })
+  }
+
+  async function getTranslation() {
+    const res = await translate(text, langPair)
+    setResult(res)
+
   }
 
   console.log(langPair)
@@ -80,7 +87,7 @@ export function LeftCard() {
     </div>
         <button
       className="translate-button"
-      onClick={() => console.log("Translate")}>
+      onClick={getTranslation}>
       Translate
     </button>
       </div>
