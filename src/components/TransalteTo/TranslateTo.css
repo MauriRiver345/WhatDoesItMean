@@ -14,6 +14,11 @@
 #iconExchange {
   padding-top: 1.2em;
 }
+#iconExchange:hover {
+  cursor: pointer;
+  color:#5c7c50;
+  outline: none;
+}
 
 .header {
   width: 85%;
@@ -23,7 +28,7 @@
   flex-direction: row;
   padding-left: 1em;
   padding-right: 1em;
-  justify-content: space-between;
+  justify-content: space-around;
   border-bottom: 1px solid white;
 }
 
@@ -96,6 +101,14 @@
 }
 
 .Language:hover{
-  color: blue;
+  color: #33691E;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Language.active {
+  color: #33691E;
+  font-weight: bold;
+}
+#Destiny{
+  font-weight: lighter;
 }

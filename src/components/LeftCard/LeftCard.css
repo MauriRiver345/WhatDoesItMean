@@ -91,3 +91,6 @@
     background-color: var(--primary-900);
   }
 }
+#origin{
+  font-weight: lighter;
+}
