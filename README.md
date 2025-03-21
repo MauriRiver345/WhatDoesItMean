@@ -29,7 +29,7 @@
 - [Features](#features)
   - [Screenshots 📸](#screenshots-)
     - [iPhone 14 Pro](#iphone-14-pro)
-    - [iPhone 14 Pro Max](#iphone-14-pro-max)
+    - [Pixel 7 Pro](#pixel-7-pro)
 - [How to Install 💻](#how-to-install-)
 - [Prettier 💅](#prettier-)
 - [Contributors 👨‍💻](#contributors-)
@@ -47,8 +47,8 @@
 #### iPhone 14 Pro
 <img src="./static/iPhone-14-Pro-415x852.png" alt="Iphone 14" width="300px">
 
-#### iPhone 14 Pro Max
-<img src="./static/iPhone-14-Pro-Max-430x932.png" alt="Iphone 14 Pro Max" width="300px">
+#### Pixel 7 Pro
+<img src="./static/Pixel-7-Pro-480x1040.png" alt="Pixel 7 Pro" width="300px">
 
 ## How to Install 💻
 
