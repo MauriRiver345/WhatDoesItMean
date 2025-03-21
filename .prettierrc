@@ -1,5 +1,8 @@
 {
   "singleQuote": false,
   "semi": false,
-  "singleAttributePerLine": true
+  "singleAttributePerLine": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "jsxSingleQuote": true
 }

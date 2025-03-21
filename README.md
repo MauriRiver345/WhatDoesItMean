@@ -1,54 +1,116 @@
-# React + TypeScript + Vite
+<a name="readme-top"></a>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+![Typescript][typescript]
+![React][react]
+![Vite][vite]
+![Prettier][prettier]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+[![contributions][contributions]](https://github.com/MauriRiver345/WhatDoesItMean/graphs/contributors)
+[![commits][commits]](https://github.com/MauriRiver345/WhatDoesItMean/commits)
+[![repo-size][repo-size]](https://github.com/MauriRiver345/WhatDoesItMean)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<img src="./static/Macbook-Air-1559x975.png" alt="What Does It Mean?" >
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## What Does It Mean?
+
+<p align="left">
+<em>What Does It Mean?</em> is a web application that provides a user-friendly interface for translating text between different languages. It utilizes the <strong>mymemory</strong> translation service API to enable seamless language switching and content rendering across various languages.
+</p>
+
+</div>
+
+<details>
+<summary>Table of Contents</summary>
+
+- [What Does It Mean?](#what-does-it-mean)
+- [Features](#features)
+  - [Screenshots 📸](#screenshots-)
+    - [iPhone 14 Pro](#iphone-14-pro)
+    - [iPhone 14 Pro Max](#iphone-14-pro-max)
+- [How to Install 💻](#how-to-install-)
+- [Prettier 💅](#prettier-)
+- [Contributors 👨‍💻](#contributors-)
+
+</details>
+
+## Features
+
+- **Language Translation 🌐**: Translate text between different languages using the **mymemory** translation service API.
+- **Responsive Design 📱 💻**: Ensures a seamless user experience across various screen sizes.
+- **Space Theme 🌌**: Personalize the application's appearance with a space theme.
+
+### Screenshots 📸
+
+#### iPhone 14 Pro
+<img src="./static/iPhone-14-Pro-415x852.png" alt="Iphone 14" width="300px">
+
+#### iPhone 14 Pro Max
+<img src="./static/iPhone-14-Pro-Max-430x932.png" alt="Iphone 14 Pro Max" width="300px">
+
+## How to Install 💻
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/MauriRiver345/WhatDoesItMean.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+3. Run the application
+
+```bash
+npm run dev
+```
+
+## Prettier 💅
+
+This project uses [Prettier](https://prettier.io/) to format the code, ensuring a consistent code style across the project.
+
+> If you're using **Visual Studio Code**, you can install the Prettier extension to automatically format your code as you type.
+
+Prettier configuration is located in the `.prettierrc` file, here are the settings:
+
+```json
+{
+  "singleQuote": false,
+  "semi": false,
+  "singleAttributePerLine": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "jsxSingleQuote": true
+}
+```
+
+## Contributors 👨‍💻
+
+This was a project that was created for improvement and learning purposes.
+
+**Thanks to all the contributors who have helped make this project!**
+
+<a href="https://github.com/MauriRiver345/WhatDoesItMean/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=MauriRiver345/WhatDoesItMean" />
+</a>
+
+<p align="right">(<a href="#readme-top">Back to top</a>)</p>
+
+
+[portrait]: ./static/Macbook-Air-1559x975.png
+[contributions]: https://img.shields.io/github/contributors/MauriRiver345/WhatDoesItMean?style=for-the-badge
+[commits]: https://img.shields.io/github/commit-activity/t/MauriRiver345/WhatDoesItMean?style=for-the-badge
+[repo-size]: https://img.shields.io/github/repo-size/MauriRiver345/WhatDoesItMean?style=for-the-badge
+[typescript]: https://img.shields.io/badge/Typescript-blue?style=for-the-badge&logo=Typescript&logoColor=white
+[react]: https://img.shields.io/badge/React-blue?style=for-the-badge&logo=React&logoColor=white
+[vite]: https://img.shields.io/badge/Vite-8A2BE2?style=for-the-badge&logo=Vite&logoColor=white
+[prettier]:https://img.shields.io/badge/Prettier-blue?style=for-the-badge&logo=Prettier&logoColor=white
+
+
+[mobile-iphone-14-pro]: ./static/iPhone-14-Pro-415x852.png
+[mobile-pixel-7-pro]: ./static/Pixel-7-Pro-480x1040.png
