@@ -8,7 +8,7 @@ export function TranslationProvider({
 }) {
   const [text, setText] = useState("")
   const [result, setResult] = useState("")
-  const [langPair, setLangPair] = useState("")
+  const [langPair, setLangPair] = useState("en|es")
 
   return (
     <TranslationContext.Provider

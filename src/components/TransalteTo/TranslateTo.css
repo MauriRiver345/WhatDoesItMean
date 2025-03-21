@@ -1,6 +1,6 @@
-.translateTo {
-  width: 40%;
-  height: 90%;
+.translate-card {
+  width: 100%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8,15 +8,16 @@
   border: solid lightgray 0.5px;
   opacity: 0.8;
   border-radius: 15px;
-
 }
 
-#iconExchange {
+
+#icon-exchange {
   padding-top: 1.2em;
 }
-#iconExchange:hover {
+
+#icon-echange:hover {
   cursor: pointer;
-  color:#5c7c50;
+  color: #5c7c50;
   outline: none;
 }
 
@@ -43,27 +44,13 @@
 }
 
 .text {
-  width: 85%;
-  height: 180px;
   display: flex;
   flex-direction: column;
-  gap: 1em;
   padding-left: 1em;
   padding-right: 1em;
 }
-.translateFrom{
-  flex-wrap: wrap;
-  width: 40%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #151615;
-  border: solid lightgray 0.5px;
-  opacity: 0.8;
-  border-radius: 15px;
-}
-.footerFrom{
+
+.footer-from {
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -72,23 +59,30 @@
   padding-right: 1em;
   padding-bottom: 0.5em;
 }
-.iconos{
+
+.iconos {
   display: flex;
   gap: 1em;
 }
-.mini-icons{
+
+.mini-icons {
   opacity: 0.5;
 }
 
-.result{
+.result {
   margin-top: 0px !important;
   padding-left: 15px;
   font-family: monospace;
-  word-wrap: break-word; /* Rompe palabras largas */
-  overflow-wrap: break-word; /* Asegura que se rompan palabras si es necesario */
-  white-space: normal; /* Permite que el texto se ajuste dentro del contenedor */
-  max-width: 100%; /* Asegura que no supere el ancho del contenedor */
-  overflow-x: hidden; /* Evita el desbordamiento */
+  word-wrap: break-word;
+  /* Rompe palabras largas */
+  overflow-wrap: break-word;
+  /* Asegura que se rompan palabras si es necesario */
+  white-space: normal;
+  /* Permite que el texto se ajuste dentro del contenedor */
+  max-width: 100%;
+  /* Asegura que no supere el ancho del contenedor */
+  overflow-x: hidden;
+  /* Evita el desbordamiento */
   overflow-y: scroll;
   font-size: 1.5em;
   font-size: large !important;
@@ -100,15 +94,33 @@
   line-height: normal;
 }
 
-.Language:hover{
+.language:hover {
   color: #33691E;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.Language.active {
+
+.language.active {
   color: #33691E;
   font-weight: bold;
 }
-#Destiny{
+
+#destiny {
   font-weight: lighter;
+}
+
+@media (width <=480px) {
+  .translate-card {
+    height: 320px;
+  }
+
+  .to-translate {
+    height: 90px;
+  }
+}
+
+@media (width <=395px) {
+  .header {
+    font-size: .8rem;
+  }
 }

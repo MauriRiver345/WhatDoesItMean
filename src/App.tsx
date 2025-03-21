@@ -6,7 +6,7 @@ import { TranslationProvider } from "./context/TranslationContext/TranslationPro
 
 function App() {
   return (
-    <>
+    <main>
       <TranslationProvider>
         <MainTitle />
         <div className="cards-container">
@@ -14,7 +14,7 @@ function App() {
           <TranslateTo />
         </div>
       </TranslationProvider>
-    </>
+    </main>
   )
 }
 

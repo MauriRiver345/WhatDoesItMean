@@ -29,7 +29,6 @@
 }
 
 .to-translate {
-  padding-top: 10px;
   font-size: large !important;
   font-weight: 500 !important;
   background-color: none;
@@ -37,7 +36,7 @@
   border: none;
   outline: none;
   resize: none;
-  height: 130px;
+  height: 200px;
   width: 90%;
 
   font-size: 1.5em;
@@ -91,6 +90,7 @@
     background-color: var(--primary-900);
   }
 }
-#origin{
+
+#origin {
   font-weight: lighter;
 }
