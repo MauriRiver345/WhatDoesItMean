@@ -28,51 +28,51 @@ export function TranslateTo() {
   }
 
   return (
-    <div className="translate-card">
-      <div className="header">
-        <p id="destiny">To</p>
+    <div className='translate-card'>
+      <div className='header'>
+        <p id='destiny'>To</p>
         <p
           className={`language ${selectedLang === "en" ? "active" : ""}`}
           onClick={changeToLang}
-          data-lang="en"
+          data-lang='en'
         >
           English
         </p>
         <p
           className={`language ${selectedLang === "es" ? "active" : ""}`}
           onClick={changeToLang}
-          data-lang="es"
+          data-lang='es'
         >
           Spanish
         </p>
         <p
           className={`language ${selectedLang === "de" ? "active" : ""}`}
           onClick={changeToLang}
-          data-lang="de"
+          data-lang='de'
         >
           German
         </p>
         <p
           className={`language ${selectedLang === "it" ? "active" : ""}`}
           onClick={changeToLang}
-          data-lang="it"
+          data-lang='it'
         >
           Italian
         </p>
       </div>
-      <div className="text">
-        <p className="result">{result}</p>
+      <div className='text'>
+        <p className='result'>{result}</p>
       </div>
-      <div className="footer">
-        <div className="iconos"></div>
+      <div className='footer'>
+        <div className='iconos'></div>
         <a
-          href=""
-          className="mini-icons"
+          href=''
+          className='mini-icons'
         >
           <PiSpeakerHighFill />
         </a>
         <a
-          className="mini-icons"
+          className='mini-icons'
           onClick={() => navigator.clipboard.writeText(result)}
         >
           <FaCopy />

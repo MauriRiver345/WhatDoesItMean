@@ -69,69 +69,69 @@ export function LeftCard() {
   }
 
   return (
-    <div className="translate-card">
-      <div className="header">
-        <p id="origin">From</p>
+    <div className='translate-card'>
+      <div className='header'>
+        <p id='origin'>From</p>
         <p
           className={`language ${selectedLang === "es" ? "active" : ""}`}
           onClick={changeFromLang}
-          data-lang="es"
+          data-lang='es'
         >
           Spanish
         </p>
         <p
           className={`language ${selectedLang === "en" ? "active" : ""}`}
           onClick={changeFromLang}
-          data-lang="en"
+          data-lang='en'
         >
           English
         </p>
         <p
           className={`language ${selectedLang === "de" ? "active" : ""}`}
           onClick={changeFromLang}
-          data-lang="de"
+          data-lang='de'
         >
           German
         </p>
         <p
           className={`language ${selectedLang === "it" ? "active" : ""}`}
           onClick={changeFromLang}
-          data-lang="it"
+          data-lang='it'
         >
           Italian
         </p>
         <a onClick={swapLanguages}>
-          <FaExchangeAlt id="icon-exchange" />
+          <FaExchangeAlt id='icon-exchange' />
         </a>
       </div>
-      <div className="text">
-        <div className="to-translate-container">
+      <div className='text'>
+        <div className='to-translate-container'>
           <textarea
             onChange={handleInput}
             onKeyDown={handleKeyDown}
             value={text}
-            className="to-translate"
-            placeholder="Type here..."
+            className='to-translate'
+            placeholder='Type here...'
           />
         </div>
-        <div className="total-characters-container">
-          <p className="total-characters">{text.length}/500</p>
+        <div className='total-characters-container'>
+          <p className='total-characters'>{text.length}/500</p>
         </div>
       </div>
-      <div className="footer-from">
-        <div className="iconos">
-          <a className="mini-icons">
+      <div className='footer-from'>
+        <div className='iconos'>
+          <a className='mini-icons'>
             <PiSpeakerHighFill />
           </a>
           <a
-            className="mini-icons"
+            className='mini-icons'
             onClick={() => navigator.clipboard.writeText(text)}
           >
             <FaCopy />
           </a>
         </div>
         <button
-          className="translate-button"
+          className='translate-button'
           onClick={getTranslation}
         >
           Translate

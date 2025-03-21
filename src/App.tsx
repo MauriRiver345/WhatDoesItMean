@@ -9,7 +9,7 @@ function App() {
     <main>
       <TranslationProvider>
         <MainTitle />
-        <div className="cards-container">
+        <div className='cards-container'>
           <LeftCard />
           <TranslateTo />
         </div>
